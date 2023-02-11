@@ -1,0 +1,521 @@
+<!--
+    Reference https://html.spec.whatwg.org/
+    Living Standard — Last Updated 6 February 2023
+-->
+
+<!DOCTYPE html>
+
+<!-- 4.1 The document element -->
+
+<html lang="en">
+
+<!-- 4.2 Document metadata -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="HTML Tags All in One">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="">
+    <link rel="stylesheet" href="">
+    <style></style>
+    <title>HTML Tags All in One</title>
+</head>
+
+<!-- 4.3 Sections -->
+
+<body>
+    <div id="container">
+        <header>
+            <hgroup>
+                <h1>Heading 1</h1>
+                <p>Subheading 1</p>
+            </hgroup>
+            <nav></nav>
+        </header>
+        <main>
+            <article>
+                <h2>Heading 2</h2>
+                <p>Subheading 2</p>
+                <section>
+                    <h3>Heading 3</h3>
+                    <p>Subheading 3</p>
+                    <section>
+                        <h4>Heading 4</h4>
+                        <p>Subheading 4</p>
+                        <section>
+                            <h5>Heading 5</h5>
+                            <p>Subheading 5</p>
+                            <section>
+                                <h6>Heading 6</h6>
+                                <p>Subheading 6</p>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+                <hr>
+                <section>
+                    <!-- 4.4 Grouping content -->
+                    <h3>Grouping content</h3>
+                    <p>paragraph</p>
+                    <!-- <hr> -->
+                    <pre>
+preformatted text
+                    </pre>
+                    <blockquote>
+                        <p>blockquote</p>
+                    </blockquote>
+                    <ol>
+                        <li>ordered item1</li>
+                        <li>ordered item2</li>
+                        <li>ordered item3</li>
+                    </ol>
+                    <ul>
+                        <li>unordered item</li>
+                        <li>unordered item</li>
+                        <li>unordered item</li>
+                    </ul>
+                    <menu>
+                        <li>menu item1</li>
+                        <li>menu item2</li>
+                        <li>menu item3</li>
+                    </menu>
+                    <dl>
+                        <dt>definition term</dt>
+                        <dd>definition description</dd>
+                    </dl>
+                    <figure>
+                        <img src="" alt="figure">
+                        <figcaption>figcaption</figcaption>
+                    </figure>
+                    <!-- <main></main> -->
+                    <div>div</div>
+                </section>
+                <hr>
+                <section>
+                    <!-- 4.5 Text-level semantics -->
+                    <h3>Text-level semantics</h3>
+
+                    <a href="">anchor</a>
+                    <em>emphasis</em>
+                    <strong>strong</strong>
+                    <small>small</small>
+                    <s>strike</s>
+                    <cite>citation</cite>
+                    <q cite="">quotation</q>
+                    <dfn>definition</dfn>
+                    <abbr title="world wide web">www</abbr>
+                    <ruby>
+                        薔薇
+                        <rp>(</rp>
+                        <rt>ばら</rt>
+                        <rp>)</rp>
+                    </ruby>
+                    <p>
+                        data:
+                        <data value="5">伍</data>
+                    </p>
+                    <p>
+                        time:
+                        <time datetime="2023-02">2023年2月</time>
+                    </p>
+                    <p>
+                        code:
+                        <code>fmt.Println("Hello, 世界")</code>
+                    </p>
+                    <p>
+                        var:
+                        <var>variable</var>
+                    </p>
+                    <p>
+                        samp & kbd:
+                        When prompted <samp>"Do you like HTML?"</samp>,
+                        enter <kbd>yes</kbd>
+                    </p>
+                    <p>
+                        sup:
+                        a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>
+                    </p>
+                    <p>
+                        sub:
+                        H<sub>2</sub>O
+                    </p>
+                    <i>italic</i>
+                    <b>bold</b>
+                    <u>underline</u>
+                    <mark>mark</mark>
+                    <p>
+                        bdi:
+                        <bdi>إيان</bdi>: 3 posts.
+                    </p>
+                    <p>
+                        bdo:
+                        <bdo dir="rtl">あいうえお</bdo>
+                    </p>
+                    <p>
+                        <span>span</span>
+                    </p>
+                    <p>
+                        br:
+                        <br>
+                    </p>
+                    <div style="width: 5rem;">
+                        <p>word bre<wbr>ak</p>
+                    </div>
+                </section>
+                <hr>
+                <section>
+                    <!-- 4.7 Edits -->
+                    <h3>Edits</h3>
+
+                    <ins>insert</ins>
+                    <del>delete</del>
+                </section>
+                <hr>
+                <section>
+                    <!-- 4.8 Embedded content -->
+                    <h3>Embedded content</h3>
+
+                    <p>
+                        picture:
+                        <picture>
+                            <source type="image/svg+xml" srcset="https://resources.whatwg.org/logo.svg">
+                            <img src="" width="100" height="100" alt="picture">
+                        </picture>
+                    </p>
+                    <p>
+                        iframe:
+                        <iframe title="iframe" src="https://html.spec.whatwg.org/print.pdf"></iframe>
+                    </p>
+                    <p>
+                        embed:
+                        <embed type="application/pdf" src="https://html.spec.whatwg.org/print.pdf">
+                    </p>
+                    <p>
+                        object:
+                        <object type="application/pdf" data="https://html.spec.whatwg.org/print.pdf"></object>
+                    </p>
+                    <p>
+                        video:
+                        <video controls src="">
+                            <track kind="" src="">
+                        </video>
+                    </p>
+                    <p>
+                        audio:
+                        <audio controls src=""></audio>
+                    </p>
+                    <p>
+                        map:
+                        <map name="questionmark">
+                            <area title="?" coords="50, 70, 60, 80" shape="rect" target="_blank"
+                                href="https://html.spec.whatwg.org/print.pdf" alt="?">
+                        </map>
+                        <img usemap="#questionmark" src="https://resources.whatwg.org/logo.svg" width="100" height="100"
+                            alt="questionmark">
+                    </p>
+                </section>
+                <hr>
+                <section>
+                    <!-- 4.9 Tabular data -->
+                    <table>
+                        <caption>Table</caption>
+                        <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">Version</th>
+                                <th scope="col">Year</th>
+                                <th scope="col">Month</th>
+                                <th scope="col">Standards Body</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>HTML(1.0)</td>
+                                <td>1993</td>
+                                <td>6</td>
+                                <td>IETF</td>
+                            </tr>
+                            <tr>
+                                <td>HTML+</td>
+                                <td>1993</td>
+                                <td>11</td>
+                                <td>IETF</td>
+                            </tr>
+                            <tr>
+                                <td>HTML2</td>
+                                <td>1995</td>
+                                <td>11</td>
+                                <td>IETF</td>
+                            </tr>
+                            <tr>
+                                <td>HTML3.2</td>
+                                <td>1997</td>
+                                <td>1</td>
+                                <td>W3C</td>
+                            </tr>
+                            <tr>
+                                <td>HTML4</td>
+                                <td>1997</td>
+                                <td>12</td>
+                                <td>W3C</td>
+                            </tr>
+                            <tr>
+                                <td>HTML4.01</td>
+                                <td>1999</td>
+                                <td>12</td>
+                                <td>W3C</td>
+                            </tr>
+                            <tr>
+                                <td>HTML5</td>
+                                <td>2014</td>
+                                <td>10</td>
+                                <td>W3C</td>
+                            </tr>
+                            <tr>
+                                <td>HTML5.1</td>
+                                <td>2016</td>
+                                <td>11</td>
+                                <td>W3C</td>
+                            </tr>
+                            <tr>
+                                <td>HTML5.2</td>
+                                <td>2017</td>
+                                <td>12</td>
+                                <td>W3C</td>
+                            </tr>
+                            <tr>
+                                <td>HTML Living Standard</td>
+                                <td>2021</td>
+                                <td>1</td>
+                                <td>WHATWG</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th scope="col">Version</th>
+                                <th scope="col">Year</th>
+                                <th scope="col">Month</th>
+                                <th scope="col">Standards Body</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <!-- Reference https://en.wikipedia.org/wiki/HTML -->
+                </section>
+                <hr>
+                <section>
+                    <!-- 4.10 Forms -->
+                    <form>
+                        <fieldset>
+                            <p>
+                                <legend>Input Type Attribute</legend>
+                            </p>
+                            <p>
+                                <label for="hidden">hidden</label>
+                                <input id="hidden" type="hidden" name="hideen">
+                            </p>
+                            <p>
+                                <label for="text">text</label>
+                                <input id="text" type="text" name="text">
+                            </p>
+                            <p>
+                                <label for="search">search</label>
+                                <input id="search" type="search" name="search">
+                            </p>
+                            <p>
+                                <label for="tel">tel</label>
+                                <input id="tel" type="tel" name="tel">
+                            </p>
+                            <p>
+                                <label for="url">url</label>
+                                <input id="url" type="url" name="url">
+                            </p>
+                            <p>
+                                <label for="email">email</label>
+                                <input id="email" type="email" name="email">
+                            </p>
+                            <p>
+                                <label for="password">password</label>
+                                <input id="password" type="password" name="password">
+                            </p>
+                            <p>
+                                <label for="date">date</label>
+                                <input id="date" type="date" name="date">
+                            </p>
+                            <p>
+                                <label for="month">month</label>
+                                <input id="month" type="month" name="month">
+                            </p>
+                            <p>
+                                <label for="week">week</label>
+                                <input id="week" type="week" name="week">
+                            </p>
+                            <p>
+                                <label for="time">time</label>
+                                <input id="time" type="time" name="time">
+                            </p>
+                            <p>
+                                <label for="datetimelocal">datetime-local</label>
+                                <input id="datetimelocal" type="datetime-local" name="datetimelocal">
+                            </p>
+                            <p>
+                                <label for="number">number</label>
+                                <input id="number" type="number" name="number">
+                            </p>
+                            <p>
+                                <label for="range">range</label>
+                                <input id="range" type="range" name="range" oninput="result.value = range.value">
+                                <output name="result">0</output>
+                            </p>
+                            <p>
+                                <label for="color">color</label>
+                                <input id="color" type="color" name="color">
+                            </p>
+                            <p>
+                                What HTML tags do you use most often?
+                                <label for="div">div</label>
+                                <input id="div" type="checkbox" name="tags" value="div">
+                                <label for="span">span</label>
+                                <input id="span" type="checkbox" name="tags" value="span">
+                                <label for="other">other tags</label>
+                                <input id="other" type="checkbox" name="tags" value="other">
+                            </p>
+                            <p>
+                                Do you like HTML?
+                                <label for="yes">Yes</label>
+                                <input id="yes" type="radio" name="choise" value="yes">
+                                <label for="no">No</label>
+                                <input id="no" type="radio" name="choise" value="no">
+                            </p>
+                            <p>
+                                <label for="file">file</label>
+                                <input id="file" type="file" name="file">
+                            </p>
+                            <p>
+                                <label for="submit">submit</label>
+                                <input id="submit" type="submit" name="submit">
+                            </p>
+                            <p>
+                                <label for="image">image</label>
+                                <input id="image" type="image" name="image">
+                            </p>
+                            <p>
+                                <label for="reset">reset</label>
+                                <input id="reset" type="reset" name="reset">
+                            </p>
+                            <p>
+                                <label for="inputbutton">input button</label>
+                                <input id="inputbutton" type="button" name="inputbutton" value="inputbutton">
+                            </p>
+                            <p>
+                                <label for="button">button</label>
+                                <button id="button" type="button" name="button">button</button>
+                            </p>
+                            <p>
+                                <label for="select">select</label>
+                                <select id="select" name="browsers">
+                                    <optgroup label="blink">
+                                        <option>chrome</option>
+                                        <option>edge</option>
+                                    </optgroup>
+                                    <optgroup label="webkit">
+                                        <option>safari</option>
+                                    </optgroup>
+                                    <optgroup label="gecko">
+                                        <option>firefox</option>
+                                    </optgroup>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="datalist">datalist</label>
+                                <input id="datalist" name="mybrowser" list="mybrowser">
+                                <datalist id="mybrowser">
+                                    <option>chrome</option>
+                                    <option>edge</option>
+                                    <option>safari</option>
+                                    <option>firefox</option>
+                                </datalist>
+                            </p>
+                            <p>
+                                <label for="textarea">textarea</label>
+                                <textarea id="textarea" name="textarea"></textarea>
+                            </p>
+                            <!-- <output></output> -->
+                            <p>
+                                <label for="progress">progress</label>
+                                <progress id="progress" name="progress">waiting...</progress>
+                            </p>
+                            <p>
+                                <label for="meter">meter</label>
+                                <meter id="meter" name="meter" value="5" max="10">5/10</meter>
+                            </p>
+                            <!-- <fieldset></fieldset> -->
+                            <!-- <legend></legend> -->
+                        </fieldset>
+                    </form>
+                </section>
+                <hr>
+                <section>
+                    <!-- 4.11 Interactive elements -->
+                    <details>
+                        <summary>Details...</summary>
+                        <p>HTML stands for Hypertext Markup Language.</p>
+                    </details>
+                    <p>
+                        <button onclick="document.getElementById('dialog').showModal()">Open a dialog</button>
+                        <dialog id="dialog">
+                            Dialog
+                            <button onclick="document.getElementById('dialog').close()">Close</button>
+                        </dialog>
+                    </p>
+                </section>
+            </article>
+        </main>
+        <aside>
+        </aside>
+        <footer>
+            <address>address</address>
+        </footer>
+    </div>
+    <!-- 4.12 Scripting -->
+    <!-- <div id="templatearea"></div> -->
+
+    <template id="template">
+        <p>
+            template:
+            <slot name="firstname">firstname</slot>
+            <slot name="lastname">lastname</slot>
+        </p>
+    </template>
+    <div id="slot">
+        <span slot="firstname">Tim</span>
+        <span slot="lastname">Berners-Lee</span>
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+    <script>
+        // template, slot
+        const slot = document.getElementById('slot');
+        const shadowRoot = slot.attachShadow({ mode: 'open' });
+        const template = document.getElementById('template').content.cloneNode(true);
+        shadowRoot.appendChild(template);
+
+        // canvas
+        const canvas = document.getElementById('canvas');
+        const context = canvas.getContext('2d');
+        const x = 10, y = 10, w = 100, h = 100;
+        context.fillStyle = 'green';
+        context.fillRect(x, y, w, h);
+        context.fillStyle = 'black';
+        context.textAlign = 'center'
+        context.fillText('canvas', (w / 2) + x, (h / 2) + y);
+    </script>
+    <noscript>noscript</noscript>
+</body>
+
+</html>
